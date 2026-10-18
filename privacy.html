@@ -28,9 +28,10 @@
 <h2>Google のアカウントで許可していただく範囲</h2>
 <p>運営者の YouTube アカウントで、YouTube Data API の「youtube.force-ssl」の範囲を許可しています。これを使って行うのは次のことだけです。</p>
 <ul>
-  <li>運営者が 1 本ずつ確認して承認した動画を、運営者のチャンネルにアップロードする（タイトル・説明・タグ・サムネイル・字幕を含む）</li>
+  <li>運営者が 1 本ずつ確認して承認した動画を、運営者のチャンネルに<b>非公開</b>でアップロードする（タイトル・説明・タグ・サムネイル・字幕を含む）</li>
+  <li>アップロードした動画に公開予約を設定する（予約の時刻の設定・変更）。予約の時刻になると、YouTube 側で公開されます</li>
   <li>運営者のチャンネルの再生リストに動画を追加する（再生リストが無ければ作る）</li>
-  <li>運営者のチャンネルの動画の説明を書き換える（後から本編の URL を入れる時だけ。公開設定は変えません）</li>
+  <li>運営者のチャンネルの動画の説明を書き換える（後から本編の URL を入れる時だけ）</li>
   <li>動画の状態（公開・非公開・処理中）と、元の配信が公開アーカイブになっているかを確かめる</li>
 </ul>
 <p>あわせて YouTube Analytics API の「yt-analytics.readonly」（読むだけ）の範囲を許可しています。これを使って行うのは、運営者のチャンネルの動画の再生回数・視聴時間・平均視聴率などの数字を読み、どの切り抜きが見られているかを確かめることだけです。</p>
@@ -61,9 +62,10 @@ on the owner's own computer, to prepare and publish clip videos to that channel.
 <h2>Google user data and scopes</h2>
 <p>The owner authorizes the YouTube Data API scope "youtube.force-ssl" for the owner's own YouTube account. The tool uses it only to:</p>
 <ul>
-  <li>upload videos that the owner has reviewed and approved one by one to the owner's channel, with their title, description, tags, thumbnail and captions;</li>
+  <li>upload videos that the owner has reviewed and approved one by one to the owner's channel as <b>private</b>, with their title, description, tags, thumbnail and captions;</li>
+  <li>schedule the publication of those uploaded videos (set or change the scheduled time); YouTube makes each video public at that time;</li>
   <li>add those videos to playlists on the owner's channel (creating a playlist if needed);</li>
-  <li>edit the description of the owner's own videos (only to add a link to the full video later; the privacy status is never changed);</li>
+  <li>edit the description of the owner's own videos (only to add a link to the full video later);</li>
   <li>check the status of videos (public, private, processing) and whether an original live stream has become a public archive.</li>
 </ul>
 <p>The owner also authorizes the read-only YouTube Analytics API scope "yt-analytics.readonly". The tool uses it only to read the figures of the owner's own channel
